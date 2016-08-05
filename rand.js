@@ -42,7 +42,7 @@ Rand.prototype.nextDouble = function(){
 
 Rand.prototype.nextInRange = function(a, b) {
     var r = this.nextDouble();
-    return ((b - a) * r + a + 1) | 0;
+    return ((b - a + 1) * r + a) | 0;
 }
 
 module.exports = Rand;
