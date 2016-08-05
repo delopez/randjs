@@ -9,7 +9,7 @@ function xorshift32( x32 ){
     return x32; 
 }
 
-//XORShif t128
+//XORShift128
 function Xorshift128(seed){
     this.x = xorshift32(seed);
     this.y = xorshift32(this.x);
